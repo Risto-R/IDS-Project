@@ -3,10 +3,15 @@ import librosa
 import numpy as np
 import os
 
-df = pd.read_csv("Datasets/validated_RU.tsv", sep="\t")
+pathname = "Datasets/validated_RU.tsv"
+output_pathname = "Datasets/validated_RU_SpeechFeatures.csv"
+
+df = pd.read_csv(pathname, sep="\t")
 df = df.dropna(subset=["gender"])
 df = df[df.gender != "other"]
 df = df[["path", "age", "gender"]]
+
+
 # New Columns
 column_chroma_stft = []
 column_rms = []
@@ -57,4 +62,4 @@ df = df.assign(spec_bw=column_spec_bw)
 df = df.assign(rolloff=column_rolloff)
 df = df.assign(zcr=column_zcr)
 df = df.assign(mfcc=column_mfcc)
-df.to_csv("Datasets/validated_RU_SpeechFeatures.csv", encoding="utf-8", index=False)
+df.to_csv(output_pathname, encoding="utf-8", index=False)
