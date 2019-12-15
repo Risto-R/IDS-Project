@@ -11,3 +11,5 @@ Even though features can be extracted from .mp3 files there might be errors and 
 
 Datasets with extracted features: [Google Drive](https://drive.google.com/drive/folders/10N8crdpFxvhx3oCJk_jVDxM0qI4NVcB2)
 
+Poster for presentation: [Poster](Poster.pptx)
+
