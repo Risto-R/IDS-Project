@@ -1,5 +1,5 @@
 # Introduction to Data Science 2019 Project
-## Speaker Recoqnition - Gender and accent classification based on the speaker's voice
+## Speaker Recognition - Gender and accent classification based on the speaker's voice
 
 For this project we used datasets from [Common Voice by Mozilla](https://voice.mozilla.org)
 Datasets consisted of tsv files and mp3 audio clips.
